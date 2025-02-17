@@ -1,6 +1,37 @@
 body{
 margin: 0px;
 padding: 0px;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+.card {
+    display: none;
+    width: 300px;
+    padding: 20px;
+    background: #222;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.card h2 {
+    margin-top: 0;
+}
+.btn {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover {
+    background: #0056b3;
 }
 .container{
      width: 100%;

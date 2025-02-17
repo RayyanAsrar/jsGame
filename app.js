@@ -115,7 +115,13 @@ let getakuma = document.getElementById("getakuma");
 let getryu = document.getElementById("getryu");
 let akumaPosition = 50;
 let ryuPosition = 1300;
+function showCard() {
+    document.getElementById("controlCard").style.display = "block";
+}
 
+function hideCard() {
+    document.getElementById("controlCard").style.display = "none";
+}
 function changeCharacterImage(character, newSrc) {
     character.src = newSrc;
     character.style.width = "220px";  
@@ -156,23 +162,23 @@ window.addEventListener("keydown", function(event) {
         }, 1000);  
     }
 });
-window.addEventListener("keyup", function(event) {
-    if (event.keyCode !== 88 && event.keyCode !==87) {  
-        changeCharacterImage(getakuma, "https://www.fightersgeneration.com/characters/akuma-ts-stance.gif");
+// window.addEventListener("keyup", function(event) {
+//     if (event.keyCode !== 88 && event.keyCode !==87) {  
+//         changeCharacterImage(getakuma, "https://www.fightersgeneration.com/characters/akuma-ts-stance.gif");
         
-    }
-});
+//     }
+// });
 
 
 window.addEventListener("keydown", function(event) {
     
     if (event.keyCode == 39  && ryuPosition<1300) {  
-        changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-walkf.gif");
+        changeCharacterImage(getryu, "https://www.fightersgeneration.com/np2/char1/kofxii/kyo-12-elbow.gif");
         
         ryuPosition += 20;
         getryu.style.left = `${ryuPosition}px`;
     } else if (event.keyCode == 37  && ryuPosition>0) { 
-        changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-walkf.gif");
+        changeCharacterImage(getryu, "https://www.fightersgeneration.com/np2/char1/kofxii/kyo-12-elbow.gif");
        
         ryuPosition -= 20;
         getryu.style.left = `${ryuPosition}px`;
@@ -181,19 +187,19 @@ window.addEventListener("keydown", function(event) {
 });
 window.addEventListener("keydown", function(event) {
     if (event.keyCode == 76) {  
-        changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-hadoken11.gif");
+        changeCharacterImage(getryu, "https://www.fightersgeneration.com/np7/char/gifs/kyo/ex/attacks/kyo-ex-super3.gif");
         
         setTimeout(function(){
-            changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-ts-stance.gif");
+            changeCharacterImage(getryu, "https://www.fightersgeneration.com/np5/kof12/kyo-12s.gif");
          
-        }, 2000);  
+        }, 3000);  
     } else if(event.keyCode == 38){
-        changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-shoryukens.gif");
+        changeCharacterImage(getryu, "https://www.fightersgeneration.com/np7/char/gifs/kyo/attacks/kyo-xi-special2.gif");
       
         setTimeout(function(){
-            changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-ts-stance.gif");
+            changeCharacterImage(getryu, "https://www.fightersgeneration.com/np5/kof12/kyo-12s.gif");
             
-        }, 1000);  
+        }, 2000);  
     }
 });
 window.addEventListener("keyup", function(event) {
@@ -202,7 +208,7 @@ window.addEventListener("keyup", function(event) {
         
     }
     if (event.keyCode !== 76 && event.keyCode !== 38) {
-        changeCharacterImage(getryu, "https://www.fightersgeneration.com/characters3/ryu-ts-stance.gif");
+        changeCharacterImage(getryu, "https://www.fightersgeneration.com/np5/kof12/kyo-12s.gif");
         
     }
 });
