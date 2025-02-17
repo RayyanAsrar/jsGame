@@ -1,0 +1,27 @@
+body{
+margin: 0px;
+padding: 0px;
+}
+.container{
+     width: 100%;
+     height: 100vh;
+    background-image: url(https://twistedsifter.com/wp-content/uploads/2013/05/animated-gifs-of-fighting-game-backgrounds-48.gif);
+    background-size: cover;
+    position: relative;
+}
+.character {
+    position: absolute;
+    width: 170px;
+    bottom: 50px;
+}
+#getakuma {
+    left: 50px;
+}
+
+#getryu {
+    left: 1300px;
+}
+/* .akuma-moving{
+    position: absolute;
+    width: 170px;
+} */
