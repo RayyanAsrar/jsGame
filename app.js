@@ -202,7 +202,7 @@ window.addEventListener("keydown", function(event) {
         }, 2000);  
     }
 });
-window.addEventListener("keyup", function(event) {
+window.addEventListener("keyup", function(event){
     if (event.keyCode !== 88 && event.keyCode !== 87) {
         changeCharacterImage(getakuma, "https://www.fightersgeneration.com/characters/akuma-ts-stance.gif");
         
